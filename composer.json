@@ -1,24 +1,22 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "digitalion/laravel-simple-user-settings",
+    "description": "A simple method for managing user settings",
     "keywords": [
-        ":vendor_name",
+        "digitalion",
         "laravel",
-        ":package_slug"
+        "laravel-simple-user-settings"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/digitalion/laravel-simple-user-settings",
     "license": "MIT",
-    "authors": [
-        {
-            "name": ":author_name",
-            "email": "author@domain.com",
-            "role": "Developer"
-        }
-    ],
+    "authors": [{
+        "name": "Digitalion",
+        "email": "dev@digitalion.it",
+        "homepage": "https://digitalion.it",
+        "role": "Developer"
+    }],
     "require": {
-        "php": "^8.1",
-        "spatie/laravel-package-tools": "^1.14.0",
-        "illuminate/contracts": "^9.0"
+        "php": "^8.0",
+        "illuminate/contracts": "^8.0|^9.0"
     },
     "require-dev": {
         "laravel/pint": "^1.0",
@@ -30,18 +28,20 @@
         "phpstan/extension-installer": "^1.1",
         "phpstan/phpstan-deprecation-rules": "^1.0",
         "phpstan/phpstan-phpunit": "^1.0",
-        "phpunit/phpunit": "^9.5",
-        "spatie/laravel-ray": "^1.26"
+        "phpunit/phpunit": "^9.5"
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
-        }
+            "Digitalion\\LaravelSimpleUserSettings\\": "src",
+            "Digitalion\\LaravelSimpleUserSettings\\Database\\Factories\\": "database/factories"
+        },
+        "files": [
+            "src/bootstrap/helpers.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Digitalion\\LaravelSimpleUserSettings\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -61,10 +61,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Digitalion\\LaravelSimpleUserSettings\\LaravelSimpleUserSettingsServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "LaravelSimpleUserSettings": "Digitalion\\LaravelSimpleUserSettings\\Facades\\LaravelSimpleUserSettings"
             }
         }
     },
