@@ -2,9 +2,9 @@
 
 namespace Digitalion\LaravelSimpleUserSettings\Tests;
 
+use Digitalion\LaravelSimpleUserSettings\LaravelSimpleUserSettingsServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Digitalion\LaravelSimpleUserSettings\LaravelSimpleUserSettingsServiceProvider;
 
 class TestCase extends Orchestra
 {

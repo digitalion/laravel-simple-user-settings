@@ -28,6 +28,6 @@ class LaravelSimpleUserSettings
         $default = Arr::get(config('laravel-simple-user-settings', []), $key);
         $this->set($key, $default);
 
-        return !Arr::exists(auth()->user()->settings ?? [], $key);
+        return ! Arr::exists(auth()->user()->settings ?? [], $key);
     }
 }
