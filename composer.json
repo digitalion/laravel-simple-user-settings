@@ -36,7 +36,7 @@
             "Digitalion\\LaravelSimpleUserSettings\\Database\\Factories\\": "database/factories"
         },
         "files": [
-            "src/bootstrap/helpers.php"
+            "bootstrap/helpers.php"
         ]
     },
     "autoload-dev": {
